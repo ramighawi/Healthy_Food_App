@@ -1,0 +1,304 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+
+    <ListView
+        android:id="@+id/championsListView"
+        android:layout_width="316dp"
+        android:layout_height="315dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:divider="#FFCC00"
+        android:dividerHeight="4px"
+        android:transcriptMode="alwaysScroll"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coinsChampionsBtn" />
+
+    <Button
+        android:id="@+id/coinsChampionsBtn"
+        android:layout_width="190dp"
+        android:layout_height="51dp"
+
+
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/silver"
+
+        android:text="Champions Of Coins"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/feedsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/facebookIcon" />
+
+    <ListView
+        android:id="@+id/commentsListView"
+        android:layout_width="288dp"
+        android:layout_height="203dp"
+
+        android:divider="#FFCC00"
+        android:dividerHeight="4px"
+        android:transcriptMode="alwaysScroll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coinsChampionsBtn" />
+
+    <EditText
+        android:id="@+id/writeCommentView"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="19dp"
+        android:clickable="true"
+        android:hint="'Share Us What Do You Think About Healthy Food'"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/submitCommentImage"
+        app:layout_constraintTop_toBottomOf="@+id/commentsListView" />
+
+    <Button
+        android:id="@+id/feedsBtn"
+        android:layout_width="190dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="-2dp"
+        android:backgroundTint="@color/green_1000"
+        android:text="Feeds"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/coinsChampionsBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whatsappIcon" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/logoutImageView"
+        android:layout_width="0dp"
+        android:layout_height="74dp"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        app:civ_border_color="@color/green_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/green_1000"
+        app:civ_shadow_radius="5.5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logout_green_icon_foreground" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="79dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <TextView
+        android:id="@+id/sumOfCoinsView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/coinView"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/coinView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView"
+        app:srcCompat="@mipmap/coin_icon" />
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green_1000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/profileImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="383dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="33dp"
+        android:fontFamily="@font/barchella_drumal"
+        android:gravity="center_horizontal"
+        android:text="@string/WelcomeMessage"
+        android:textColor="@color/purple_1000"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn3"
+        android:layout_width="79dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="4dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="@color/purple_1000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn2"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="4dp"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="#8ed633"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:bmb_showMoveEaseEnum="outBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="79dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/logoTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/healthy_restaurants_icon" />
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginBottom="48dp"
+        android:shadowColor="@color/aqua"
+        android:text="Healthy Food"
+        android:textColor="@color/purple_1000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/welcomeMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/facebookIcon"
+        android:layout_width="411dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/white"
+        app:civ_shadow_radius="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/coinsChampionsBtn"
+        app:layout_constraintEnd_toStartOf="@+id/instaIcon"
+        app:layout_constraintStart_toEndOf="@+id/whatsappIcon"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:srcCompat="@mipmap/facebook_icon" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/instaIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/white"
+        app:civ_shadow_radius="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/coinsChampionsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/facebookIcon"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:layout_constraintVertical_bias="0.166"
+        app:srcCompat="@mipmap/insta_icon" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/whatsappIcon"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="0dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/white"
+        app:civ_shadow_radius="0.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/feedsBtn"
+        app:layout_constraintEnd_toStartOf="@+id/facebookIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeMessage"
+        app:srcCompat="@mipmap/whatsapp_icon" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+
+        android:id="@+id/submitCommentImage"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="85dp"
+        android:background="@null"
+
+        app:civ_border_color="@color/app_backgroung_background"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/green_1000"
+        app:civ_shadow_radius="0.5dp"
+        app:layout_constraintBottom_toTopOf="@+id/boomBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentsListView"
+        app:srcCompat="@mipmap/comment_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

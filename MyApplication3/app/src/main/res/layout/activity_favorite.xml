@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".FavoriteActivity">
+
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+
+        android:layout_marginEnd="7dp"
+        android:shadowColor="@color/aqua"
+        android:text="Healthy Food"
+        android:textColor="@color/purple_1000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/healthy_restaurants_icon" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn3"
+        android:layout_width="79dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="19dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="@color/purple_1000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn2"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="22dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="#8ed633"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:bmb_showMoveEaseEnum="outBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="79dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@null"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/coinView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="14dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView"
+        app:srcCompat="@mipmap/coin_icon" />
+
+    <TextView
+        android:id="@+id/sumOfCoinsView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/coinView"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green_1000"
+        android:textStyle="bold"
+        app:flow_verticalAlign="center"
+        app:layout_constraintStart_toEndOf="@+id/profileImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/favRestaurantText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="550dp"
+        android:fontFamily="@font/barchella_drumal"
+        android:gravity="center"
+        android:text="My Favorite Restaurants"
+        android:textColor="@color/purple_1000"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/clickONItemToRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="10dp"
+        android:text="(Click On A Favorite Icon To Remove From Favorite Restaurants)"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/favoriteList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favRestaurantText" />
+
+    <ListView
+        android:id="@+id/favoriteList"
+        android:layout_width="317dp"
+        android:layout_height="316dp"
+
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="46dp"
+        android:divider="#FFCC00"
+        android:dividerHeight="4px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clickONItemToRemove" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

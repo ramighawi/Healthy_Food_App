@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_foreground"
+    tools:context=".LentilsActivity">
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/addToMenuBoomBtn"
+        android:layout_width="79dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+        app:bmb_normalColor="?android:attr/textColorSecondaryInverseNoDisable"
+        app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lentilsDetailsTextView" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn2"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="#8ed633"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:bmb_showMoveEaseEnum="outBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn"
+        android:layout_width="79dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="@color/purple_1000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/lentilsImageView"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lentilsTextView"
+        app:srcCompat="@drawable/lentils_image" />
+
+    <TextView
+        android:id="@+id/lentilsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/barchella_drumal"
+        android:gravity="center_horizontal"
+        android:text="Lentils"
+        android:textColor="@color/purple_1000"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lentilsDetailsTextView"
+        android:layout_width="220dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="28dp"
+        android:text="A lentil is a pulse that features prominently in many food cultures around the world, including those of Pakistan, Nepal, Bangladesh, India, Bhutan, and Sri Lanka.
+
+Lentils provide good amountsTrusted Source of fiber, magnesium, and potassium.
+
+They tend to require a long cooking time. However, manufacturers can sprout the seeds, making them a delicious, healthful, ready-to-eat snack.
+
+Adding a container of sprouted lentils to a lunchbox or picnic basket, perhaps with some chili powder or pepper for flavoring, makes for a delicious and healthful snack."
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lentilsImageView" />
+
+    <TextView
+        android:id="@+id/addToMenuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Add To My Menu==>"
+        android:textColor="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.289"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lentilsDetailsTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_foreground"
+    tools:context=".ProfileActivity">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/copyrightIcon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="23dp"
+        android:background="@null"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@mipmap/copyright_icon" />
+
+    <TextView
+        android:id="@+id/ramiGhawi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Rami Ghawi - 2021"
+        android:textColor="@color/green"
+        android:textSize="17dp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/copyrightIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginBottom="48dp"
+        android:shadowColor="@color/aqua"
+        android:text="Healthy Food"
+        android:textColor="@color/purple_1000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/saveNameImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/editTextName"
+        app:layout_constraintTop_toBottomOf="@+id/editNameImageView"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="1dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/green_1000"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNameImageView" />
+
+    <ImageView
+        android:id="@+id/editNameImageView"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintStart_toEndOf="@id/nameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/idTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idImageView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/idImageView"
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="180dp"
+        app:civ_border_width="1dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/boomBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneImageView"
+        app:srcCompat="@mipmap/id_icon_foreground" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="64dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/idTextView"
+        app:layout_constraintEnd_toStartOf="@+id/editPhoneImageView"
+        app:layout_constraintStart_toEndOf="@+id/phoneImageView" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn3"
+        android:layout_width="79dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="4dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="@color/purple_1000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn2"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="4dp"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="#8ed633"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:bmb_showMoveEaseEnum="outBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sumOfCoinsView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="5dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coinView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/coinView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage"
+        app:srcCompat="@mipmap/coin_icon" />
+
+    <ImageView
+        android:id="@+id/imageFromGalleryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="55dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="1dp"
+        android:background="@null"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/green_1000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/takeImageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="121dp"
+        app:civ_border_width="0.5dp"
+
+        app:civ_shadow_radius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumOfCoinsView"
+        app:srcCompat="@mipmap/healthy_icon" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/emailImageView"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="218dp"
+        app:civ_border_width="1dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/email_icon_foreground" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="60dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneTextView"
+        app:layout_constraintStart_toEndOf="@+id/emailImageView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/phoneImageView"
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        app:civ_border_width="1dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/idImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailImageView"
+        app:srcCompat="@mipmap/phone_icon_foreground" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="195dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="344dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/savePhoneImageView"
+        app:layout_constraintStart_toEndOf="@+id/idImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/editPhoneImageView"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintStart_toEndOf="@+id/phoneTextView"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageView
+        android:id="@+id/savePhoneImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextPhone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

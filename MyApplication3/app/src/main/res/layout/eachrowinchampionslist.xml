@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/championEmailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toEndOf="@+id/profileView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <TextView
+        android:id="@+id/userNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/purple_1000"
+        app:layout_constraintStart_toEndOf="@+id/profileView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sumOfCoinsView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="28dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/coinView"
+        app:layout_constraintTop_toBottomOf="@+id/userNameView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/coinView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintStart_toEndOf="@+id/profileView"
+        app:layout_constraintTop_toBottomOf="@+id/userNameView"
+        app:srcCompat="@mipmap/coin_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

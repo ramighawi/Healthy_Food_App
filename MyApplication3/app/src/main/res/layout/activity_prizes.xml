@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_foreground"
+    tools:context=".PrizesActivity">
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn"
+        android:layout_width="79dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="4dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="@color/purple_1000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn2"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="4dp"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="#8ed633"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:bmb_showMoveEaseEnum="outBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="79dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@null"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/coinView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView"
+        app:srcCompat="@mipmap/coin_icon" />
+
+    <TextView
+        android:id="@+id/sumOfCoinsView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:text="0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/coinView"
+        app:layout_constraintTop_toBottomOf="@+id/profileImageView" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green_1000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/profileImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/smartWatchHandOKImageView"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="58dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/walkerHandOKImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/smartWatchCoinView"
+        app:srcCompat="@drawable/hand_ok_image" />
+
+    <ImageView
+        android:id="@+id/smartWatchImageView"
+        android:layout_width="85dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/walkerImageView"
+        app:layout_constraintEnd_toStartOf="@+id/smartWatchEqualImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/smartwatch_image" />
+
+    <TextView
+        android:id="@+id/smartWatchCoinsTextView"
+        android:layout_width="32dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="81dp"
+        android:text="5000"
+        app:layout_constraintBottom_toTopOf="@+id/walkerCoinsTextView"
+        app:layout_constraintEnd_toStartOf="@+id/smartWatchCoinView"
+        app:layout_constraintStart_toEndOf="@+id/smartWatchEqualImageView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/smartWatchCoinView"
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="81dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/walkerCoinsTextView"
+        app:layout_constraintEnd_toStartOf="@+id/smartWatchHandOKImageView"
+        app:layout_constraintStart_toEndOf="@+id/smartWatchCoinsTextView"
+        app:srcCompat="@mipmap/coin_icon" />
+
+    <ImageView
+        android:id="@+id/smartWatchEqualImageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/walkerEqualImageView"
+        app:layout_constraintEnd_toStartOf="@+id/smartWatchCoinsTextView"
+        app:layout_constraintStart_toEndOf="@+id/smartWatchImageView"
+        app:srcCompat="@drawable/equal_icon" />
+
+    <ImageView
+        android:id="@+id/walkerHandOKImageView"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="170dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/boomBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/walkerCoinView"
+        app:srcCompat="@drawable/hand_ok_image" />
+
+    <ImageView
+        android:id="@+id/walkerImageView"
+        android:layout_width="85dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="146dp"
+        app:layout_constraintBottom_toTopOf="@+id/boomBtn2"
+        app:layout_constraintEnd_toStartOf="@+id/walkerEqualImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/walker_image" />
+
+    <TextView
+        android:id="@+id/walkerCoinsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="267dp"
+        android:text="10000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/walkerCoinView"
+        app:layout_constraintStart_toEndOf="@+id/walkerEqualImageView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/walkerCoinView"
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="267dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/walkerHandOKImageView"
+        app:layout_constraintStart_toEndOf="@+id/walkerCoinsTextView"
+        app:srcCompat="@mipmap/coin_icon" />
+
+    <ImageView
+        android:id="@+id/walkerEqualImageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/walkerCoinsTextView"
+        app:layout_constraintStart_toEndOf="@+id/walkerImageView"
+        app:srcCompat="@drawable/equal_icon" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="70dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="65dp"
+
+        app:civ_border_width="0.5dp"
+        app:civ_shadow_radius="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/healthy_icon" />
+
+    <TextView
+        android:id="@+id/prizesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose Your Prize"
+        android:textColor="@color/purple_1000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/dumbbellEqualImageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/smartWatchEqualImageView"
+        app:layout_constraintEnd_toStartOf="@+id/dumbbellCoinsTextView"
+        app:layout_constraintStart_toEndOf="@+id/dumbbellImageView"
+        app:srcCompat="@drawable/equal_icon" />
+
+    <ImageView
+        android:id="@+id/dumbbellImageView"
+        android:layout_width="85dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/smartWatchImageView"
+        app:layout_constraintEnd_toStartOf="@+id/dumbbellEqualImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/dumbbell_image" />
+
+    <TextView
+        android:id="@+id/dumbbellCoinsTextView"
+        android:layout_width="32dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="81dp"
+        android:text="1000"
+        app:layout_constraintBottom_toTopOf="@+id/smartWatchCoinsTextView"
+        app:layout_constraintEnd_toStartOf="@+id/dumbbellCoinView"
+        app:layout_constraintStart_toEndOf="@+id/dumbbellEqualImageView" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/dumbbellCoinView"
+        android:layout_width="15dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="81dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/smartWatchCoinView"
+        app:layout_constraintEnd_toStartOf="@+id/dumbbellHandOKImageView"
+        app:layout_constraintStart_toEndOf="@+id/dumbbellCoinsTextView"
+        app:srcCompat="@mipmap/coin_icon" />
+
+    <ImageView
+        android:id="@+id/dumbbellHandOKImageView"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="58dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/smartWatchHandOKImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dumbbellCoinView"
+        app:srcCompat="@drawable/hand_ok_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

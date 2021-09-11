@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="20"
+    android:background="@mipmap/app_backgroung_round"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:src="@mipmap/healthy_icon_foreground"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/app_name"
+        android:textSize="25sp"
+        android:textColor="@color/purple_1000"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:hint="@string/InsertName"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:hint="@string/InsertEmail"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/userPassword"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:hint="@string/insert_password"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/userConfirmPassword"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:hint="@string/confirm_password"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:ems="9"
+        android:hint="@string/insert_your_id"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/userPhone"
+        android:layout_width="160dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="@string/insert_your_phone"
+        />
+
+
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/signupBtn"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_weight="2"
+        android:layout_gravity="center"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_shadow="true"
+
+        app:civ_shadow_color="@color/purple_1000"
+        app:civ_shadow_radius="13dp"
+        app:srcCompat="@mipmap/signup_icon_foreground"
+        />
+
+
+
+</LinearLayout>

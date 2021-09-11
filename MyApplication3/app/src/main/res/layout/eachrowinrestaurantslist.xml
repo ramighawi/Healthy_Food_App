@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/bigText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Big Text"
+        android:gravity="bottom"
+        android:textColor="@color/green_1000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_weight="0.5"
+        />
+
+    <ImageButton
+        android:id="@+id/favBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="@null"
+        android:backgroundTintMode="screen"
+        android:scaleType="centerInside"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"/>
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@null"
+        android:scaleType="centerCrop"
+
+
+
+        tools:srcCompat="@android:drawable/ic_menu_gallery" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>
+
+

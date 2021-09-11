@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/app_background_foreground"
+    tools:context=".AddingBreakfastActivity">
+
+    <EditText
+        android:id="@+id/amountKindText"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="111dp"
+        android:hint="Grams / Units"
+        android:inputType="textPersonName"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/addBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/breakfastMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breakfast Menu"
+        android:textColor="@color/purple_1000"
+        android:textSize="25sp"
+        android:textStyle="italic"
+
+        app:layout_constraintBottom_toTopOf="@+id/kindOfFoodText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/kindOfFoodText"
+        android:layout_width="152dp"
+        android:layout_height="52dp"
+
+        android:layout_marginBottom="85dp"
+        android:hint="Kind Of Food"
+        android:inputType="textPersonName"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/amountKindText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/amountText"
+        android:layout_width="80dp"
+        android:layout_height="52dp"
+
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="85dp"
+        android:hint="Amount"
+        android:inputType="number"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kindOfFoodText" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/silver"
+        app:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amountText"
+        app:rippleColor="@color/purple_1000" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

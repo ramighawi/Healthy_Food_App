@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/app_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HealthyRestaurantsActivity">
+
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/green_1000"
+        android:textStyle="bold" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="79dp"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+
+        android:background="@null"
+        app:civ_border_color="@color/purple_1000"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/purple_1000"
+
+
+        app:civ_shadow_radius="5dp"
+        app:srcCompat="@drawable/profile_pic" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        app:srcCompat="@drawable/healthy_restaurants_icon" />
+
+    <TextView
+        android:id="@+id/logoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="74dp"
+        android:shadowColor="@color/aqua"
+        android:text="Healthy Food"
+        android:textColor="@color/purple_1000"
+        android:textStyle="bold" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn3"
+        android:layout_width="79dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="280dp"
+
+        android:layout_marginTop="614dp"
+        android:layout_marginBottom="22dp"
+
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="@color/purple_1000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1" />
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn2"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="614dp"
+        android:layout_marginBottom="22dp"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="#8ed633"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        app:bmb_showMoveEaseEnum="outBack" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/coinView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="75dp"
+        android:background="@null"
+        app:civ_border_color="#DAA520"
+        app:civ_shadow_radius="5dp"
+        app:srcCompat="@mipmap/coin_icon" />
+
+    <TextView
+        android:id="@+id/sumOfCoinsView"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="75dp"
+        android:text="0"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/healthyRestaurantsList"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/barchella_drumal"
+        android:gravity="center"
+        android:text="Healthy Restaurants"
+        android:textColor="#cc0066"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/bigText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="531dp"
+
+        android:text="Click On A Restaurant Image"
+        android:textColor="@color/purple_1000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/smallText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginBottom="129dp"
+        android:text="Thank You"
+        android:textColor="@color/green_1000"
+        android:textSize="18sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addRestaurantBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="176dp"
+        android:layout_marginBottom="35dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/white"
+        app:elevation="4dp"
+        app:rippleColor="@color/purple_1000" />
+
+    <ImageView
+        android:id="@+id/restaurantImage"
+        android:layout_width="330dp"
+        android:layout_height="149dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="383dp"
+        android:scaleType="fitXY" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurantView"
+        android:layout_width="218dp"
+        android:layout_height="282dp"
+        android:layout_below="@+id/healthyRestaurantsList"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="-1dp"
+        android:divider="@color/white"
+
+        android:dividerHeight="4px">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+

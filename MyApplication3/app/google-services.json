@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "163438831484",
+    "project_id": "ramiproject-11439",
+    "storage_bucket": "ramiproject-11439.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:163438831484:android:c1126f0ee4a5b79a38e6f9",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "163438831484-mdres70ocl1538jnadr8bf96v5okqels.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGtKUv4zYa7Uyj-E-kd7qMJ_jsQ3puBNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "163438831484-mdres70ocl1538jnadr8bf96v5okqels.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

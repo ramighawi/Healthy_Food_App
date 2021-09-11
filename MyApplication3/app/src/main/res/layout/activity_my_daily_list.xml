@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="23"
+    android:background="@drawable/app_background"
+    tools:context=".MyDailyListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_weight="3.6">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2.2"
+            android:layout_weight="3">
+
+
+           <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+               android:layout_weight="1.7"
+               android:orientation="horizontal"
+               android:weightSum="4">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+             android:layout_weight="3"
+
+            android:background="@null"
+            app:civ_border_color="@color/purple_1000"
+            app:civ_border_width="4dp"
+            app:civ_shadow="true"
+            app:civ_shadow_color="@color/purple_1000"
+            app:civ_shadow_radius="5dp"
+
+            app:srcCompat="@drawable/profile_pic" />
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-12dp"
+                android:textColor="@color/green_1000"
+                android:textStyle="bold" />
+           </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="3">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/coinView"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@null"
+
+                    android:layout_weight="0.1"
+                    app:civ_border_color="#DAA520"
+                    app:civ_shadow_radius="5dp"
+                    app:srcCompat="@mipmap/coin_icon" />
+
+                <TextView
+                    android:id="@+id/sumOfCoinsView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.9"
+                    android:text="0"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_weight="2">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/healthy_restaurants_icon" />
+            <TextView
+                android:id="@+id/logoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Healthy Food"
+                android:textColor="@color/purple_1000"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/myDailyListView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.3"
+
+        android:fontFamily="@font/barchella_drumal"
+        android:gravity="center"
+        android:text="My Menu"
+        android:textColor="#cc0066"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:text="Date"
+        android:textStyle="bold"
+        android:textColor="@color/silver"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/userPlanForToday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Plan For Today"
+        android:textStyle="italic"
+        android:textColor="@color/green"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1.2"
+        >
+
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/breakfastAddBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@null"
+            android:textSize="8sp"
+
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+                android:id="@+id/breakfastView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Breakfast"
+                android:textColorHint="@color/aqua"
+
+                android:textStyle="italic"
+                android:fontFamily="sans-serif-condensed"
+
+                android:textColor="#cc0066"
+
+                android:textSize="24sp"
+                android:layout_weight="2.5"
+                />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/eggsImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:civ_border_color="@color/green_1000"
+            app:srcCompat="@mipmap/eggs_foreground" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <CheckBox
+            android:id="@+id/breakfastCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/PurpleCheck"/>
+
+    </LinearLayout>
+
+
+
+            <ListView
+                android:id="@+id/breakfastList"
+                android:divider="@color/green_1000"
+                android:dividerHeight="4px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/border"
+                />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1.2"
+
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/lunchAddBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Add"
+            android:textSize="8sp"
+            android:layout_weight="0.7"
+            android:background="@null"
+            app:srcCompat="@android:drawable/ic_input_add"
+
+            />
+        <TextView
+                android:id="@+id/lunchView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Lunch"
+                android:textStyle="italic"
+            android:fontFamily="sans-serif-condensed"
+
+            android:textColor="#cc0066"
+                android:textSize="24sp"
+                android:layout_weight="2.5"
+                />
+
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/lunchImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:civ_border_color="@color/green_1000"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/lunch_image" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <CheckBox
+            android:id="@+id/lunchCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/PurpleCheck"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <ListView
+                android:id="@+id/lunchList"
+                android:divider="@color/green_1000"
+                android:dividerHeight="4px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+        android:background="@drawable/border"
+                />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1.2"
+
+        >
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/dinnerAddBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Add"
+            android:textSize="8sp"
+            android:layout_weight="0.7"
+            android:background="@null"
+            app:srcCompat="@android:drawable/ic_input_add"
+            />
+
+
+        <TextView
+                android:id="@+id/dinnerView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Dinner"
+            android:fontFamily="sans-serif-condensed"
+
+            android:textStyle="italic"
+                android:textColor="#cc0066"
+                android:textSize="24sp"
+                android:layout_weight="2.5"
+                />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/dinnerImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            app:civ_border_color="@color/green_1000"
+
+            app:srcCompat="@mipmap/dinner_foreground" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+
+        <CheckBox
+            android:id="@+id/dinnerCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/PurpleCheck"/>
+
+
+    </LinearLayout>
+            <ListView
+                android:id="@+id/dinnerList"
+                android:divider="@color/green_1000"
+                android:dividerHeight="4px"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="@drawable/border"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_weight="2.3">
+
+        <com.nightonke.boommenu.BoomMenuButton
+            android:id="@+id/boomBtn2"
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+
+            android:layout_marginStart="18dp"
+            app:bmb_buttonEnum="textInsideCircle"
+            app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+            app:bmb_normalColor="#8ed633"
+            app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+            app:bmb_showMoveEaseEnum="outBack"
+            />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4.8"/>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomBtn3"
+        android:layout_width="79dp"
+        android:layout_height="82dp"
+
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_4_1"
+        app:bmb_normalColor="@color/purple_1000"
+        app:bmb_piecePlaceEnum="piecePlace_dot_4_1"
+        />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

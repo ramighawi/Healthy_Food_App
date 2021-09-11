@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Healthy Food</string>
+    <string name="InsertEmail">Insert Your E-Mail</string>
+    <string name="insert_password">Insert Password</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="WelcomeMessage">TextView</string>
+    <string name="profile">Profile</string>
+    <string name="list">FoodList</string>
+    <string name="list_of_res">Healthy Restaurants</string>
+    <string name="about">About</string>
+    <string name="email">Email</string>
+    <string name="InsertName">Insert Your Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signup">SignUp</string>
+    <string name="insert_your_phone">Insert Your Phone</string>
+    <string name="insert_your_id">Insert Your ID</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="restaurant_address">Restaurant Address</string>
+    <string name="phone">Phone</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
